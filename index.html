@@ -12,13 +12,20 @@
     <!-- オノの読み込み -->
     <a-assets>
       <a-asset-item id="GAxe" src="GAxe.glb"></a-asset-item>
+      <a-asset-item id="SAxe" src="SAxe.glb"></a-asset-item>
+      <a-asset-item id="RAxe" src="RAxe.glb"></a-asset-item>
     </a-assets>
 
 
     <!-- ③ 作成したマーカーでのソース -->
     <a-marker preset="custom" type='pattern' url='pattern-namecircle.patt'>
       <a-entity gltf-model="#GAxe" visible="true" rotation="0 -360 -20">
-
+        <a-animation attribute="rotation" to="0 360 -20" direction="alternate" dur="10000" repeat="1"></a-animation>
+      </a-entity>
+      <a-entity gltf-model="#SAxe" visible="true" rotation="0 -360 -20" position="10 0 0">
+        <a-animation attribute="rotation" to="0 360 -20" direction="alternate" dur="10000" repeat="1"></a-animation>
+      </a-entity>
+      <a-entity gltf-model="#RAxe" visible="true" rotation="0 -360 -20" position="-10 0 0">
         <a-animation attribute="rotation" to="0 360 -20" direction="alternate" dur="10000" repeat="1"></a-animation>
       </a-entity>
     </a-marker>
