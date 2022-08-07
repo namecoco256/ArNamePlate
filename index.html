@@ -19,6 +19,9 @@
         if(e.target.className == "SAxe"){
           window.location.href = "https://www.speedrun.com/accf#All_Silver_Tools";
         }
+        if(e.target.className == "RAxe"){
+          window.location.href = "https://www.twitch.tv/snafful/clip/HonestArborealPlumSquadGoals-m1bpgr-HlYJF6D9E";
+        }
       })
     }
   })
@@ -42,13 +45,14 @@
       <a-entity class="SAxe" gltf-model="#SAxe" visible="true" rotation="0 -360 0" position="1 0 0" change-url>
         <a-animation attribute="rotation" to="0 360 0" direction="alternate" dur="10000" repeat="infinity"></a-animation>
       </a-entity>
-      <a-entity gltf-model="#RAxe" visible="true" rotation="0 -360 0" position="-1 0 0">
+      <a-entity class="RAxe" gltf-model="#RAxe" visible="true" rotation="0 -360 0" position="-1 0 0">
         <a-animation attribute="rotation" to="0 360 0" direction="alternate" dur="10000" repeat="infinity"></a-animation>
       </a-entity>
       <a-text value=""></a-text>
     </a-marker>
      <a-entity camera raycaster= "objects: .GAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
      <a-entity camera raycaster= "objects: .SAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
+     <a-entity camera raycaster= "objects: .RAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
   </a-scene>
   </body>
 </html>
