@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <head>
     <!-- ① スクリプトの読み込み -->
-    <title>beta45</title>
+    <title>beta47</title>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   </head>
@@ -13,7 +13,12 @@
     schema : {},
     init : function(){
       this.el.addEventListener('click',function(e){
-        window.location.href = "https://www.speedrun.com/accf#Golden_Axe";
+        if(e.target.className == "GAxe"){
+          window.location.href = "https://www.speedrun.com/accf#Golden_Axe";
+        }
+        if(e.target.className == "SAxe"){
+          window.location.href = "https://www.speedrun.com/accf#All_Silver_Tools";
+        }
       })
     }
   })
@@ -34,7 +39,7 @@
       <a-entity class="GAxe" gltf-model="#GAxe" visible="true" rotation="0 -360 0" position="0 0 0" change-url>
         <a-animation attribute="rotation" to="0 360 0" direction="alternate" dur="10000" repeat="infinity"></a-animation>
       </a-entity>
-      <a-entity gltf-model="#SAxe" visible="true" rotation="0 -360 0" position="1 0 0">
+      <a-entity class="SAxe" gltf-model="#SAxe" visible="true" rotation="0 -360 0" position="1 0 0" change-url>
         <a-animation attribute="rotation" to="0 360 0" direction="alternate" dur="10000" repeat="infinity"></a-animation>
       </a-entity>
       <a-entity gltf-model="#RAxe" visible="true" rotation="0 -360 0" position="-1 0 0">
@@ -43,6 +48,7 @@
       <a-text value=""></a-text>
     </a-marker>
      <a-entity camera raycaster= "objects: .GAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
+     <a-entity camera raycaster= "objects: .SAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
   </a-scene>
   </body>
 </html>
