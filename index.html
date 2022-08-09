@@ -13,12 +13,12 @@
     schema : {},
     init : function(){
       this.el.addEventListener('click',function(e){
-        if(e.target.className == "GAxe"){
-          window.location.href = "https://www.speedrun.com/accf#Golden_Axe";
-        }
-        if(e.target.className == "SAxe"){
-          window.location.href = "https://www.speedrun.com/accf#All_Silver_Tools";
-        }
+//         if(e.target.className == "GAxe"){
+//           window.location.href = "https://www.speedrun.com/accf#Golden_Axe";
+//         }
+//         if(e.target.className == "SAxe"){
+//           window.location.href = "https://www.speedrun.com/accf#All_Silver_Tools";
+//         }
         if(e.target.className == "RAxe"){
           window.location.href = "https://www.twitch.tv/snafful/clip/HonestArborealPlumSquadGoals-m1bpgr-HlYJF6D9E";
         }
@@ -50,8 +50,8 @@
       </a-entity>
       <a-text value=""></a-text>
     </a-marker>
-     <a-entity camera raycaster= "objects: .GAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
-     <a-entity camera raycaster= "objects: .SAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
+<!--      <a-entity camera raycaster= "objects: .GAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
+     <a-entity camera raycaster= "objects: .SAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity> -->
      <a-entity camera raycaster= "objects: .RAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
   </a-scene>
   </body>
