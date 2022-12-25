@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <head>
     <!-- ① スクリプトの読み込み -->
-    <title>beta115</title>
+    <title>beta116</title>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   </head>
@@ -59,17 +59,17 @@
       
       <a-entity gltf-model="#soundCloud" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="1 2.3 0" link="href: https://soundcloud.com/namecoco256;" title=""></a-entity>
       <a-entity gltf-model="#twitter" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="0 2.3 0" link="href: https://twitter.com/namecoco256;" title=""></a-entity> -->
-      <a-entity gltf-model="#twitｃｈ" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="-1 2.3 0" link="href: https://twitch.tv/namecoco256;" title=""></a-entity>
+      <a-entity gltf-model="#twitｃｈ" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="-1 2.3 0" link="href: https://twitch.tv/namecoco256;"></a-entity>
       <a-entity gltf-model="#meishi" visible="true" scale="1 1 1" position="0 -0.1 0"></a-entity>
       
       <a-text value=""></a-text>
     </a-marker>
     
     <a-entity camera>
-      <a-cursor cursor="fuse: false; fuseTimeout: 1500"
+      <a-cursor cursor="fuse: true; fuseTimeout: 2000"
         position="0 0 -1"
         geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.02"
-        material="color: black; shader: flat"></a-cursor>
+        material="color: #ffe0e0; shader: flat"></a-cursor>
     </a-entity>
 <!--     <a-entity camera raycaster= "objects: .SAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity>
     <a-entity camera raycaster= "objects: .RAxe" cursor="fuse: false; rayOrigin: mouse;"></a-entity> -->
