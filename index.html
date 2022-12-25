@@ -8,24 +8,6 @@
 
   <body style='margin: 0; overflow: hidden;'>
     
-  <script>
-//   AFRAME.registerComponent('change-url',{
-//     schema : {},
-//     init : function(){
-//       this.el.addEventListener('click',function(e){
-//         if(e.target.className == "GAxe"){
-//           window.open('https://www.speedrun.com/accf#Golden_Axe', '_blank');
-//         }
-//         if(e.target.className == "SAxe"){
-//           window.open('https://www.speedrun.com/accf#All_Silver_Tools', '_blank');
-//         }
-//         if(e.target.className == "RAxe"){
-//           window.open('https://www.twitch.tv/snafful/clip/HonestArborealPlumSquadGoals-m1bpgr-HlYJF6D9E', '_blank');
-//         }
-//       })
-//     }
-//   })
-  </script>
     
   <!-- シーンの追加とデバックUIを表示 -->
   <a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
@@ -39,13 +21,12 @@
       <a-asset-item id="soundCloud" src="rogo/soundcloud-rogo.glb"></a-asset-item>
       <a-asset-item id="twitch" src="rogo/twitch-rogo.glb"></a-asset-item>
       <a-asset-item id="twitter" src="rogo/twitter-rogo.glb"></a-asset-item>
-      <a-asset-item id="meishi" src="rogo/meishi.glb"></a-asset-item>
     </a-assets>
 
 
     <!-- ③ 作成したマーカーでのソース -->
     <a-marker preset="custom" type='pattern' url='pattern-namecircle.patt'>
-<!--       <a-entity class="GAxe" gltf-model="#GAxe" visible="true" scale="0.8 0.8 0.8" rotation="0 90 0" position="0 0 -0.5" link="href: https://www.speedrun.com/accf#Golden_Axe">
+      <a-entity class="GAxe" gltf-model="#GAxe" visible="true" scale="0.8 0.8 0.8" rotation="0 90 0" position="0 0 -0.5" link="href: https://www.speedrun.com/accf#Golden_Axe">
         <a-animation attribute="rotation" to="0 270 0" direction="alternate" dur="4000" repeat="infinity"></a-animation>
       </a-entity>
       <a-entity class="SAxe" gltf-model="#SAxe" visible="true" scale="0.8 0.8 0.8" rotation="0 90 0" position="1 0 -0.5" link="href: https://www.speedrun.com/accf#All_Silver_Tools;">
@@ -58,9 +39,8 @@
       <a-entity gltf-model="#SRcom" visible="true" scale="0.4 0.4 0.4" position="0 0 1" rotation="0 180 0" link="href: https://www.speedrun.com/user/namecoco_gomatoro;" title=""></a-entity>
       
       <a-entity gltf-model="#soundCloud" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="1 2.3 0" link="href: https://soundcloud.com/namecoco256;" title=""></a-entity>
-      <a-entity gltf-model="#twitter" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="0 2.3 0" link="href: https://twitter.com/namecoco256;" title=""></a-entity> -->
+      <a-entity gltf-model="#twitter" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="0 2.3 0" link="href: https://twitter.com/namecoco256;" title=""></a-entity>
       <a-entity gltf-model="#twitch" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="-1 2.3 0" link="href: https://twitch.tv/namecoco256;"></a-entity>
-      <a-entity gltf-model="#meishi" visible="false" scale="1 1 1" position="0 -0.1 0" link="href: https://twitter.com/namecoco256;"></a-entity>
       
       <a-text value=""></a-text>
     </a-marker>
