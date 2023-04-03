@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <head>
     <!-- ① スクリプトの読み込み -->
-    <title>beta124</title>
+    <title>beta125</title>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   </head>
@@ -21,6 +21,7 @@
       <a-asset-item id="soundCloud" src="rogo/soundcloud-rogo.glb"></a-asset-item>
       <a-asset-item id="twitch" src="rogo/twitch-rogo.glb"></a-asset-item>
       <a-asset-item id="twitter" src="rogo/twitter-rogo.glb"></a-asset-item>
+      <a-img id="pattern-img" src="square_pattern-markerNamecircleByChika.png">
     </a-assets>
 
 
@@ -38,9 +39,9 @@
       
       <a-entity gltf-model="#SRcom" visible="true" scale="0.4 0.4 0.4" position="0 0 1" rotation="0 180 0" link="href: https://www.speedrun.com/user/namecoco_gomatoro;" title=""></a-entity>
       
-      <a-entity gltf-model="#soundCloud" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="1 2.3 0" link="href: https://soundcloud.com/namecoco256;" title=""></a-entity>
-      <a-entity gltf-model="#twitter" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="0 2.3 0" link="href: https://twitter.com/namecoco256;" title=""></a-entity>
-      <a-entity gltf-model="#twitch" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="-1 2.3 0" link="href: https://twitch.tv/namecoco256;"></a-entity>
+      <a-entity gltf-model="#soundCloud" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="1 1 0" link="href: https://soundcloud.com/namecoco256;" title=""></a-entity>
+      <a-entity gltf-model="#twitter" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="0 1 0" link="href: https://twitter.com/namecoco256;" title=""></a-entity>
+      <a-entity gltf-model="#twitch" visible="true" scale="0.3 0.3 0.3" rotation="90 0 0" position="-1 1 0" link="href: https://twitch.tv/namecoco256;"></a-entity>
       
       <a-text value=""></a-text>
     </a-marker>
@@ -48,6 +49,7 @@
     <a-entity camera>
       <a-cursor cursor="fuse: true; fuseTimeout: 2000"
         material="color: #ffe0e0; shader: flat"></a-cursor>
+      <a-image src="pattern-img"></a-image>
     </a-entity>
   </a-scene>
   </body>
