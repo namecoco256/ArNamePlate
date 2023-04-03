@@ -13,9 +13,9 @@
   <a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
     <!-- アセットの読み込み -->
     <a-assets>
-      <a-asset-item id="GAxe" src="GAxe.glb"></a-asset-item>
+<!--       <a-asset-item id="GAxe" src="GAxe.glb"></a-asset-item>
       <a-asset-item id="SAxe" src="SAxe.glb"></a-asset-item>
-      <a-asset-item id="RAxe" src="RAxe.glb"></a-asset-item>
+      <a-asset-item id="RAxe" src="RAxe.glb"></a-asset-item> -->
       
       <a-asset-item id="SRcom" src="rogo/src.glb"></a-asset-item>
       <a-asset-item id="soundCloud" src="rogo/soundcloud-rogo.glb"></a-asset-item>
@@ -25,7 +25,7 @@
 
 
     <!-- ③ 作成したマーカーでのソース -->
-    <a-marker preset="custom" type='pattern' url='pattern-namecircle.patt'>
+<!--     <a-marker preset="custom" type='pattern' url='pattern-namecircle.patt'>
       <a-entity class="GAxe" gltf-model="#GAxe" visible="true" scale="0.8 0.8 0.8" rotation="0 90 0" position="0 0 -0.5" link="href: https://www.speedrun.com/accf#Golden_Axe">
         <a-animation attribute="rotation" to="0 270 0" direction="alternate" dur="4000" repeat="infinity"></a-animation>
       </a-entity>
@@ -34,7 +34,7 @@
       </a-entity>
       <a-entity class="RAxe" gltf-model="#RAxe" visible="true" scale="0.8 0.8 0.8" rotation="0 90 0" position="-1 0 -0.5" link="href: https://www.twitch.tv/snafful/clip/HonestArborealPlumSquadGoals-m1bpgr-HlYJF6D9E;">
         <a-animation attribute="rotation" to="0 270 0" direction="alternate" dur="4000" repeat="infinity"></a-animation>
-      </a-entity>
+      </a-entity> -->
       
       <a-entity gltf-model="#SRcom" visible="true" scale="0.4 0.4 0.4" position="0 0 1" rotation="0 180 0" link="href: https://www.speedrun.com/user/namecoco_gomatoro;" title=""></a-entity>
       
